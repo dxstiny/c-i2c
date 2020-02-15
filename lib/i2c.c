@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 // *** Defines ***
-#define _XTAL_FREQ 8000000      // Oscillator frequency PBA6: 8MHz (without PLL)
+#define _XTAL_FREQ 8000000      // Oscillator frequency PBA6: 8MHz (w/o PLL)
 
 #define READ 1
 #define WRITE 0
@@ -65,7 +65,7 @@ void I2C_Master_Start()
 }
 
 /**
- * @brief           restart -> if start() without having stopped before
+ * @brief           restart -> if start() w/o having stopped before
  */
 void I2C_Master_Restart()
 {
