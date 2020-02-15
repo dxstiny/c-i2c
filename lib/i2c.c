@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 // *** Defines ***
-#define _XTAL_FREQ 8000000      // Oszillatorfrequenz PBA6: 8MHz (ohne PLL)
+#define _XTAL_FREQ 8000000      // Oscillator frequency PBA6: 8MHz (without PLL)
 
 #define READ 1
 #define WRITE 0
@@ -192,7 +192,7 @@ void I2C_Master_ReadComplete(unsigned char address, unsigned char *byte, unsigne
     for (int i = 0; i < contentlength; i++)
     {
         *byte = I2C_Master_Read(*byte);
-        byte++; // pointer auf nächsten Index
+        byte++; // pointer to next index
     }
     
     I2C_Master_Stop();
