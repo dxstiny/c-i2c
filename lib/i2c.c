@@ -172,12 +172,6 @@ signed short I2C_Master_ReadPlus(unsigned short acknowledge)
 }
 
 /**
- * @brief               reads from I2C & stops the conversion
- * @param acknowledge   1 means not acknowledge and 0 means acknowledge. This value will be transmitted when we set the ACKEN bit (above). This bit has application only in master receive mode.
- * @return              returns the result that was read
- */
-
-/**
  * @brief                   starts the conversion, calls a slave, performs multiple write actions and stops the conversion
  * @param address           address of slave
  * @param byte              pointer to ACK / NAK Bits: READ RESULTS WILL BE STORED IN THIS ARRAY!!!!
